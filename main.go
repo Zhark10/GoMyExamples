@@ -1,9 +1,10 @@
 package main
 import (
-	"fmt"
+	// "fmt"
 	// "./user"
 	// "./cars" .
-	"./calc"
+	// "./calc"
+	"./channel"
 )
 
 // func main() {
@@ -15,12 +16,15 @@ import (
 // 	cars.CreateCars()
 // }
 
-func main() {
-	for i := 1; i < 7; i++{
-		go calc.Factorial(i)
-	}
-	fmt.Scanln()
-	fmt.Println("The End")
-}
+// func main() {
+// 	for i := 1; i < 7; i++{
+// 		go calc.Factorial(i)
+// 	}
+// 	fmt.Scanln()
+// 	fmt.Println("The End")
+// }
 
+func main() {
+	channel.RunProcecces()
+}
 
