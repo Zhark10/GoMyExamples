@@ -25,6 +25,6 @@ import (
 // }
 
 func main() {
-	channel.RunProcecces()
+	channel.RunProcessWithMutex()
 }
 

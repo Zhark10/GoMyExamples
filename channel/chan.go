@@ -2,7 +2,7 @@ package channel
 
 import "fmt"
 
-func RunProcecces() {
+func RunProcesses() {
 	channel := make(chan string)
 
 	go gorutine(channel)
