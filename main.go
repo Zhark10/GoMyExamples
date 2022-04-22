@@ -2,16 +2,16 @@ package main
 
 import (
 	// "./user"
-	// "./cars"
+	"./cars"
 	// "./calc"
 	// "./channel"
-	"./osy"
+	// "./osy"
 )
 
 func main() {
 	// user.ShowUser()
-	// cars.CreateCars()
+	cars.CreateCars()
 	// calc.GetFactorials()
 	// channel.WaitGroupExample()
-	osy.WorkWithFile()
+	// osy.WorkWithFile()
 }
