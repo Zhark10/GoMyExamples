@@ -2,7 +2,7 @@ package calc
 
 import "fmt"
 
-func Factorial(n int) {
+func factorial(n int) {
 	if n < 1 {
 		fmt.Println("Unvalid input number")
 		return
@@ -12,4 +12,12 @@ func Factorial(n int) {
 		result *= i
 	}
 	fmt.Println(n, "-", result)
+}
+
+func GetFactorials() {
+	for i := 1; i < 7; i++ {
+		go factorial(i)
+	}
+	fmt.Scanln()
+	fmt.Println("The end")
 }

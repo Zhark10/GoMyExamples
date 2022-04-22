@@ -17,10 +17,15 @@ func showUserName(userToShow string) {
 	fmt.Println(userToShow)
 }
 
-func GetUser(getIndexByUsername func(string) int, userName string) (returnedUser TUser) {
+func getUser(getIndexByUsername func(string) int, userName string) (returnedUser TUser) {
 	defer showUserName(userName)
 	defer fmt.Println("Finish")
 	index := getIndexByUsername(userName)
 	returnedUser = users[index]
 	return
+}
+
+func ShowUser() {
+	result := getUser(GetIndexByUser, "Andrew")
+	fmt.Println(result)
 }
