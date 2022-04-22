@@ -20,7 +20,7 @@ func RunProcessWithMutex() {
 	}
 }
 
-func work(i int, ch chan bool, mt *sync.Mutex){
+func work(i int, ch chan bool, mt *sync.Mutex) {
 	mt.Lock()
 	counter = 0
 	for index := 0; index < 3; index++ {
