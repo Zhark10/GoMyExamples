@@ -4,7 +4,8 @@ import (
 	// "./user"
 	// "./cars" .
 	// "./calc"
-	"./channel"
+	// "./channel"
+	"./osy"
 )
 
 // func main() {
@@ -24,7 +25,10 @@ import (
 // 	fmt.Println("The End")
 // }
 
-func main() {
-	channel.RunProcessWithMutex()
-}
+// func main() {
+// 	channel.WaitGroupExample()
+// }
 
+func main() {
+	osy.WorkWithFile()
+}
