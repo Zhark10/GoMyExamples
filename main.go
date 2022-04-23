@@ -2,16 +2,18 @@ package main
 
 import (
 	// "./user"
-	"./cars"
+	// "./cars"
 	// "./calc"
 	// "./channel"
 	// "./osy"
+	"./iot"
 )
 
 func main() {
 	// user.ShowUser()
-	cars.CreateCars()
+	// cars.CreateCars()
 	// calc.GetFactorials()
 	// channel.WaitGroupExample()
 	// osy.WorkWithFile()
+	iot.IotPeople()
 }
