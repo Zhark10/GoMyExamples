@@ -17,5 +17,6 @@ func main() {
 	// channel.WaitGroupExample()
 	// osy.WorkWithFile()
 	// iot.IotPeople()
-	examples.MyIo()
+	// examples.MyIo()
+	examples.WriteTxtFile()
 }
