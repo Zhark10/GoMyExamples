@@ -7,7 +7,8 @@ import (
 	// "./channel"
 	// "./osy"
 	// "./iot"
-	"./examples"
+	// "./examples"
+	"./network"
 )
 
 func main() {
@@ -18,5 +19,6 @@ func main() {
 	// osy.WorkWithFile()
 	// iot.IotPeople()
 	// examples.MyIo()
-	examples.WriteTxtFile()
+	// examples.WriteTxtFile()
+	network.Network()
 }
