@@ -6,7 +6,8 @@ import (
 	// "./calc"
 	// "./channel"
 	// "./osy"
-	"./iot"
+	// "./iot"
+	"./examples"
 )
 
 func main() {
@@ -15,5 +16,6 @@ func main() {
 	// calc.GetFactorials()
 	// channel.WaitGroupExample()
 	// osy.WorkWithFile()
-	iot.IotPeople()
+	// iot.IotPeople()
+	examples.MyIo()
 }
