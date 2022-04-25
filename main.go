@@ -1,6 +1,7 @@
 package main
 
 import (
+	"./log"
 	// "./user"
 	// "./cars"
 	// "./calc"
@@ -8,17 +9,21 @@ import (
 	// "./osy"
 	// "./iot"
 	// "./examples"
-	"./network"
+	// "./network"
+	"./users"
 )
 
 func main() {
-	// user.ShowUser()
-	// cars.CreateCars()
-	// calc.GetFactorials()
-	// channel.WaitGroupExample()
-	// osy.WorkWithFile()
-	// iot.IotPeople()
-	// examples.MyIo()
-	// examples.WriteTxtFile()
-	network.Network()
+	log.SpeedTest(func() {
+		// user.ShowUser()
+		// cars.CreateCars()
+		// calc.GetFactorials()
+		// channel.WaitGroupExample()
+		// osy.WorkWithFile()
+		// iot.IotPeople()
+		// examples.MyIo()
+		// examples.WriteTxtFile()
+		// network.Network()
+		users.UserSelectors()
+	})
 }
