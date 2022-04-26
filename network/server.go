@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func Network() {
+func OnlyServer() {
 	httpRequest := "GET / HTTP/1.1\n" +
 		"Host: golang.org\n\n"
 	conn, err := net.Dial("tcp", "golang.org:80")

@@ -23,7 +23,7 @@ func main() {
 		// iot.IotPeople()
 		// examples.MyIo()
 		// examples.WriteTxtFile()
-		// network.Network()
+		// network.OnlyServer()
 		users.UserSelectors()
 	})
 }
