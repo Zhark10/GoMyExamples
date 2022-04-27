@@ -8,9 +8,10 @@ import (
 	// "./channel"
 	// "./osy"
 	// "./iot"
-	"./examples"
+	// "./examples"
 	// "./network"
 	// "./users"
+	"./helpers"
 )
 
 func main() {
@@ -23,8 +24,9 @@ func main() {
 		// iot.IotPeople()
 		// examples.MyIo()
 		// examples.WriteTxtFile()
-		examples.Closure()
+		// examples.Closure()
 		// network.OnlyServer()
 		// users.UserSelectors()
+		helpers.TypesDetection()
 	})
 }
