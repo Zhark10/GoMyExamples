@@ -14,7 +14,7 @@ func TestMain(m *testing.M) {
 }
 
 func TestService(t *testing.T) {
-	t.Run("USERS", func(t *testing.T) {
+	t.Run("FIND_USERS", func(t *testing.T) {
 		t.Parallel()
 		t.Run("findAllByNameTest", func(t *testing.T) {
 			testReceiverData := TUsers{{
@@ -69,6 +69,34 @@ func TestService(t *testing.T) {
 			testResult := testReceiverData.getAll()
 			if len(testResult) != len(testReceiverData) {
 				t.Error("Incorrect result: not all users have been received")
+			}
+		})
+	})
+
+	t.Run("FIND_ONLY_USER", func(t *testing.T) {
+		t.Run("findFirstByNameTest", func(t *testing.T) {
+			testReceiverData := TUsers{{
+				firstname: "Ark",
+				age:       27,
+				car: TCar{
+					model: "KIA",
+					cost:  2000000,
+				},
+			},
+				{
+					firstname: "Ivan",
+					age:       30,
+					car: TCar{
+						model: "KIA",
+						cost:  2200000,
+					},
+				},
+			}
+			testParam := "Ark"
+			testResult := testReceiverData.findFirstByName(testParam)
+
+			if testResult.firstname != testParam {
+				t.Error("Incorrect result: user not found")
 			}
 		})
 	})
