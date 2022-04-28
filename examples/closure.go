@@ -10,11 +10,11 @@ func Closure() {
 	fmt.Println(newCounter(20))
 }
 
-func counter(initial_value int) func(int) int {
-	count := initial_value
+func counter(initialValue int) func(int) int {
+	count := initialValue
 
-	return func(inc_value int) int {
-		count += inc_value
+	return func(incValue int) int {
+		count += incValue
 		return count
 	}
 }

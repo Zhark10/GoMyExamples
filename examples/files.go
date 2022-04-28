@@ -9,19 +9,19 @@ import (
 const filename = "hello.txt"
 
 func WriteTxtFile() {
-	str_for_file := []byte("Hello, world!!!")
-	write_err := ioutil.WriteFile(filename, str_for_file, 0600)
+	strForFile := []byte("Hello, world!!!")
+	writeErr := ioutil.WriteFile(filename, strForFile, 0600)
 
-	if write_err != nil {
-		fmt.Println(write_err)
+	if writeErr != nil {
+		fmt.Println(writeErr)
 	}
 
-	file_data, read_error := ioutil.ReadFile(filename)
+	fileData, readError := ioutil.ReadFile(filename)
 
-	if read_error != nil {
-		fmt.Println(read_error)
+	if readError != nil {
+		fmt.Println(readError)
 	}
 
-	fmt.Println(string(file_data))
+	fmt.Println(string(fileData))
 	os.Remove(filename)
 }

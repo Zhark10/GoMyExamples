@@ -19,17 +19,17 @@ func MyIo() {
 		age:  27,
 	}
 
-	file, create_error := os.Create("user.txt")
-	errorHandler("create_error", create_error)
-	_, print_error := fmt.Fprintf(file, "%s %d\n", user.name, user.age)
-	errorHandler("print_error", print_error)
+	file, createError := os.Create("user.txt")
+	errorHandler("create_error", createError)
+	_, printError := fmt.Fprintf(file, "%s %d\n", user.name, user.age)
+	errorHandler("print_error", printError)
 	file.Close()
 
-	saved_file, open_error := os.Open("user.txt")
-	errorHandler("open_error", open_error)
+	savedFile, openError := os.Open("user.txt")
+	errorHandler("open_error", openError)
 
-	_, scan_error := fmt.Fscanf(saved_file, "%s %d\n", &name, &age)
-	errorHandler("scan_error", scan_error)
+	_, scanError := fmt.Fscanf(savedFile, "%s %d\n", &name, &age)
+	errorHandler("scan_error", scanError)
 
 	fmt.Println(name, age)
 }
