@@ -1,17 +1,17 @@
 package main
 
 import (
-	"./log"
-	// "./user"
-	// "./cars"
-	// "./calc"
-	// "./channel"
-	// "./osy"
-	// "./iot"
-	// "./examples"
-	// "./network"
-	// "./users"
-	"./helpers"
+	"my_golang_pkgs/log"
+	// "my_golang_pkgs/user"
+	// "my_golang_pkgs/cars"
+	// "my_golang_pkgs/calc"
+	// "my_golang_pkgs/channel"
+	// "my_golang_pkgs/osy"
+	// "my_golang_pkgs/iot"
+	// "my_golang_pkgs/examples"
+	// "my_golang_pkgs/network"
+	// "my_golang_pkgs/users"
+	"my_golang_pkgs/helpers"
 )
 
 func main() {
