@@ -45,7 +45,30 @@ func TestService(t *testing.T) {
 
 			testResult := testReceiverData.findAllByName(testParam)
 			if testResult[0].firstname != expectedResult[0].firstname || testResult[1].firstname != expectedResult[1].firstname {
-				t.Error("Incorrect result\n")
+				t.Error("Incorrect result: the user lists don't match each other")
+			}
+		})
+		t.Run("getAll", func(t *testing.T) {
+			testReceiverData := TUsers{{
+				firstname: "Ark",
+				age:       27,
+				car: TCar{
+					model: "KIA",
+					cost:  2000000,
+				},
+			},
+				{
+					firstname: "Ivan",
+					age:       30,
+					car: TCar{
+						model: "KIA",
+						cost:  2200000,
+					},
+				},
+			}
+			testResult := testReceiverData.getAll()
+			if len(testResult) != len(testReceiverData) {
+				t.Error("Incorrect result: not all users have been received")
 			}
 		})
 	})
