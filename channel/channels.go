@@ -13,9 +13,6 @@ func RunProcessWithMutex() {
 
 	for i := 0; i < 10; i++ {
 		go work(i, ch, &mutex)
-	}
-
-	for i := 0; i < 10; i++ {
 		<-ch
 	}
 }
